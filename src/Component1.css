@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+}
+#component1{
+    width:100%;
+    margin:auto;
+}
+#tablediv{
+    width:100%;
+    border: 1px solid black;
+    margin:auto;
+
+}
+table{
+    width:100%;
+    min-height:70vw;
+    margin:auto;
+    background-color: #4287f5;
+    text-align: center;
+}
+td{
+    border: 1px solid black;
+    font-size: 3.5vw;
+}
+#name{
+    width:80%;
+    min-height:3.5vw;
+    border:none;
+    outline:none;
+}
+#email{
+    width:80%;
+    min-height:3.5vw;
+    border:none;
+    outline:none;
+}
+#password{
+    width:80%;
+    min-height:3.5vw;
+    border:none;
+    outline:none;
+}
+#mobile{
+    width:80%;
+    min-height:3.5vw;
+    border:none;
+    outline:none;
+}
+input[type=radio]{
+    width:10%;
+    min-height:3vw;
+}
+
+input[type=checkbox]{
+    width:10%;
+    min-height:3vw;
+}
+#address{
+    width:80%;
+    min-height:9.5vw;
+}
+#file{
+    width:80%;
+    min-height:3.5vw;
+    border:none;
+    outline:none;
+    font-size: 2.5vw;
+
+}
+#date{
+    width:80%;
+    min-height:3.5vw;
+    border:none;
+    outline:none;
+}
+#btn1{
+  width:30%;
+  min-height:3.5vw;
+  border:none;
+  outline:none;
+  background-color: #022359;
+  color:white;
+  border-radius:5px;
+  font-size: 2.5vw;
+}
+#btn1:hover{
+    background-color: #4dc469;
+    color:#022359;
+}
+#btn2{
+    width:30%;
+    min-height:3.5vw;
+    margin-left: 2%;
+    border:none;
+    outline:none;
+    background-color: #9e154e;
+    color:white;
+    border-radius:5px;
+    font-size: 2.5vw;
+
+
+}
