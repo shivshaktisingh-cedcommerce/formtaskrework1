@@ -156,7 +156,7 @@ export default function Component1() {
     <div id="component1">
         <form onSubmit={save}>
         <div id="tablediv">
-        <p style={{width:"80vw", margin:"auto",color:"red"}}>{namemessage1}</p>
+        {/* <p style={{width:"80vw", margin:"auto",color:"red"}}>{namemessage1}</p>
         <p style={{width:"80vw", margin:"auto",color:"red"}}>{emailmessage1}</p>
         <p style={{width:"80vw", margin:"auto",color:"red"}}>{passwordmessage1}</p>
         <p style={{width:"80vw", margin:"auto",color:"red"}}>{addressmessage1}</p>
@@ -165,19 +165,19 @@ export default function Component1() {
         <p style={{width:"80vw", margin:"auto",color:"red"}}>{checkmessage1}</p>
         <p style={{width:"80vw", margin:"auto",color:"red"}}>{filemessage1}</p>
         <p style={{width:"80vw", margin:"auto",color:"red"}}>{dobmessage1}</p>
-        <p style={{width:"80vw", margin:"auto",color:"green"}}>{flagmessage}</p>
+        <p style={{width:"80vw", margin:"auto",color:"green"}}>{flagmessage}</p> */}
 
             <table>
-                <tr><td>Enter Your Name</td><td><input type="text" id="name"/></td></tr>
-                <tr><td>Enter Your Email</td><td><input type="email" id="email"/></td></tr>
-                <tr><td>Enter Your Password</td><td><input type="password" id="password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/></td></tr>
-                <tr><td>Enter Your Address</td><td><textarea rows={5} cols={40} id="address"></textarea></td></tr>
-                <tr><td>Enter Your Mobile</td><td><input type="number" id="mobile"/></td></tr>
-                <tr><td>Select Your Gender</td><td><label><input type="radio" value="male" name="gender" id="male" onChange={radiofun} />Male<input type="radio" value="female" name="gender" id="female" onChange={radiofun} />Female</label></td></tr>
-                <tr><td>Choose Your Hobbies</td><td><label><input type="checkbox" id="cricket" value="cricket" onClick={checkfun} />Cricket<input type="checkbox" id="dancing" value="dancing" onClick={checkfun} />Dancing<input type="checkbox" id="singing" value="singing" onClick={checkfun} />Singing</label></td></tr>
-                <tr><td>Choose Your Profile Pic</td><td><input type="file" id="file"/></td></tr>
-                <tr><td>Select Your Dob</td><td><input type="date" id="date"/></td></tr>
-                <tr><td colSpan={2}><input type="submit" value="Register" id="btn1"/><input type="button" value="Reset" id="btn2" onClick={reset}/></td></tr>
+                <tr><td>Enter Your Name</td><td><input type="text" id="name"/></td><td style={{color:"red"}}>{namemessage1}</td></tr>
+                <tr><td>Enter Your Email</td><td><input type="email" id="email"/></td><td style={{color:"red"}}>{emailmessage1}</td></tr>
+                <tr><td>Enter Your Password</td><td><input type="password" id="password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/></td><td style={{color:"red"}}>{passwordmessage1}</td></tr>
+                <tr><td>Enter Your Address</td><td><textarea rows={5} cols={40} id="address"></textarea></td><td style={{color:"red"}}>{addressmessage1}</td></tr>
+                <tr><td>Enter Your Mobile</td><td><input type="number" id="mobile"/></td><td style={{color:"red"}}>{mobilemessage1}</td></tr>
+                <tr><td>Select Your Gender</td><td><label><input type="radio" value="male" name="gender" id="male" onChange={radiofun} />Male<input type="radio" value="female" name="gender" id="female" onChange={radiofun} />Female</label></td><td style={{color:"red"}}>{radiomessage1}</td></tr>
+                <tr><td>Choose Your Hobbies</td><td><label><input type="checkbox" id="cricket" value="cricket" onClick={checkfun} />Cricket<input type="checkbox" id="dancing" value="dancing" onClick={checkfun} />Dancing<input type="checkbox" id="singing" value="singing" onClick={checkfun} />Singing</label></td><td style={{color:"red"}}>{checkmessage1}</td></tr>
+                <tr><td>Choose Your Profile Pic</td><td><input type="file" id="file"/></td><td style={{color:"red"}}>{filemessage1}</td></tr>
+                <tr><td>Select Your Dob</td><td><input type="date" id="date"/></td><td style={{color:"red"}}>{dobmessage1}</td></tr>
+                <tr><td colSpan={2}><input type="submit" value="Register" id="btn1"/><input type="button" value="Reset" id="btn2" onClick={reset}/>{flagmessage}</td></tr>
 
             </table>
         </div>
